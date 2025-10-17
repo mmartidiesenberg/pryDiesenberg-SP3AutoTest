@@ -80,6 +80,7 @@
             this.txtDominio.TabIndex = 7;
             this.txtDominio.TextChanged += new System.EventHandler(this.txtDominio_TextChanged_1);
             this.txtDominio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDominio_KeyPress);
+            this.txtDominio.Validating += new System.ComponentModel.CancelEventHandler(this.txtDominio_Validating);
             // 
             // txtTitular
             // 
@@ -97,9 +98,19 @@
             0,
             0,
             0});
+            this.nrmAñoFab.Minimum = new decimal(new int[] {
+            1950,
+            0,
+            0,
+            0});
             this.nrmAñoFab.Name = "nrmAñoFab";
             this.nrmAñoFab.Size = new System.Drawing.Size(96, 35);
             this.nrmAñoFab.TabIndex = 5;
+            this.nrmAñoFab.Value = new decimal(new int[] {
+            1950,
+            0,
+            0,
+            0});
             // 
             // mskNumero
             // 
