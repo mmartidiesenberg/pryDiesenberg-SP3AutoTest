@@ -78,6 +78,7 @@
             this.txtTitular.Name = "txtTitular";
             this.txtTitular.Size = new System.Drawing.Size(471, 35);
             this.txtTitular.TabIndex = 6;
+            this.txtTitular.Validating += new System.ComponentModel.CancelEventHandler(this.txtTitular_Validating);
             // 
             // nrmAñoFab
             // 

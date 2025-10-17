@@ -44,29 +44,24 @@ namespace pryDiesenberg_SP3AutoTest
             }
         }
         List<int> numerosUsados = new List<int>();
-        private void btnRegistrar_Click(object sender, EventArgs e)
-        {
-            if (int.TryParse(mskNumero.Text, out int numero))
-            {
-                if (numerosUsados.Contains(numero))
-                {
-                    MessageBox.Show("Ese número de turno ya fue usado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    numerosUsados.Add(numero);
-                    MessageBox.Show("Turno guardado correctamente.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Debe ingresar un número entero válido.");
-            }
-        }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtTitular_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtTitular.Text.Length < 2)
+            {
+                MessageBox.Show("El titular debe tener al menos 2 caracteres.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                e.Cancel = true; // evita que el foco se pierda hasta que el usuario corrija
+                txtTitular.BackColor = Color.LightPink; // opcional: resalta el error
+            }
+            else
+            {
+                txtTitular.BackColor = SystemColors.Window; // vuelve al color normal
+            }
         }
     }
 }
