@@ -33,7 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>monitor_heh_electronics_medical_hehcare_electromyography_icon_266207.ico</ApplicationIcon>
+    <ApplicationIcon>contact_address_envelope_letter_internet_business_message_edit_mail_icon_265511.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -83,6 +86,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contact_address_envelope_letter_internet_business_message_edit_mail_icon_265511.ico" />
     <Content Include="monitor_heh_electronics_medical_hehcare_electromyography_icon_266207.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

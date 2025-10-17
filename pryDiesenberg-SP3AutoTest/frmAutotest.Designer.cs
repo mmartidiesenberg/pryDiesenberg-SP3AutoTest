@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAutotest));
             this.grpRegistro = new System.Windows.Forms.GroupBox();
             this.txtDominio = new System.Windows.Forms.TextBox();
             this.txtTitular = new System.Windows.Forms.TextBox();
@@ -264,6 +265,7 @@
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.grpEstadisticas);
             this.Controls.Add(this.grpRegistro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmAutotest";
             this.Text = "Auto Test";
             this.grpRegistro.ResumeLayout(false);
