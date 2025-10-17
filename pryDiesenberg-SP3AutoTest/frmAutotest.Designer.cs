@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAutotest));
             this.grpRegistro = new System.Windows.Forms.GroupBox();
-            this.txtDominio = new System.Windows.Forms.TextBox();
             this.txtTitular = new System.Windows.Forms.TextBox();
             this.nrmAñoFab = new System.Windows.Forms.NumericUpDown();
             this.mskNumero = new System.Windows.Forms.MaskedTextBox();
@@ -48,6 +47,7 @@
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
+            this.txtDominio = new System.Windows.Forms.TextBox();
             this.grpRegistro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nrmAñoFab)).BeginInit();
             this.grpEstadisticas.SuspendLayout();
@@ -70,18 +70,6 @@
             this.grpRegistro.TabIndex = 0;
             this.grpRegistro.TabStop = false;
             this.grpRegistro.Text = "Registro de Turnos";
-            // 
-            // txtDominio
-            // 
-            this.txtDominio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtDominio.Location = new System.Drawing.Point(305, 116);
-            this.txtDominio.MaxLength = 7;
-            this.txtDominio.Name = "txtDominio";
-            this.txtDominio.Size = new System.Drawing.Size(100, 35);
-            this.txtDominio.TabIndex = 7;
-            this.txtDominio.TextChanged += new System.EventHandler(this.txtDominio_TextChanged_1);
-            this.txtDominio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDominio_KeyPress);
-            this.txtDominio.Validating += new System.ComponentModel.CancelEventHandler(this.txtDominio_Validating);
             // 
             // txtTitular
             // 
@@ -255,6 +243,15 @@
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
             this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // txtDominio
+            // 
+            this.txtDominio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.txtDominio.Location = new System.Drawing.Point(305, 119);
+            this.txtDominio.MaxLength = 7;
+            this.txtDominio.Name = "txtDominio";
+            this.txtDominio.Size = new System.Drawing.Size(100, 35);
+            this.txtDominio.TabIndex = 7;
             // 
             // frmAutotest
             // 
