@@ -44,9 +44,9 @@
             this.mskCantTurnos = new System.Windows.Forms.MaskedTextBox();
             this.mskMasAntiguo = new System.Windows.Forms.MaskedTextBox();
             this.mskCant6Caracteres = new System.Windows.Forms.MaskedTextBox();
-            this.mskDominio = new System.Windows.Forms.MaskedTextBox();
             this.nrmAñoFab = new System.Windows.Forms.NumericUpDown();
             this.txtTitular = new System.Windows.Forms.TextBox();
+            this.txtDominio = new System.Windows.Forms.TextBox();
             this.grpRegistro.SuspendLayout();
             this.grpEstadisticas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nrmAñoFab)).BeginInit();
@@ -54,9 +54,9 @@
             // 
             // grpRegistro
             // 
+            this.grpRegistro.Controls.Add(this.txtDominio);
             this.grpRegistro.Controls.Add(this.txtTitular);
             this.grpRegistro.Controls.Add(this.nrmAñoFab);
-            this.grpRegistro.Controls.Add(this.mskDominio);
             this.grpRegistro.Controls.Add(this.mskNumero);
             this.grpRegistro.Controls.Add(this.lblTitular);
             this.grpRegistro.Controls.Add(this.lblAñoFab);
@@ -209,14 +209,6 @@
             this.mskCant6Caracteres.Size = new System.Drawing.Size(100, 35);
             this.mskCant6Caracteres.TabIndex = 6;
             // 
-            // mskDominio
-            // 
-            this.mskDominio.Location = new System.Drawing.Point(305, 113);
-            this.mskDominio.Name = "mskDominio";
-            this.mskDominio.Size = new System.Drawing.Size(151, 35);
-            this.mskDominio.TabIndex = 4;
-            this.mskDominio.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox5_MaskInputRejected);
-            // 
             // nrmAñoFab
             // 
             this.nrmAñoFab.Location = new System.Drawing.Point(305, 183);
@@ -230,6 +222,14 @@
             this.txtTitular.Name = "txtTitular";
             this.txtTitular.Size = new System.Drawing.Size(471, 35);
             this.txtTitular.TabIndex = 6;
+            // 
+            // txtDominio
+            // 
+            this.txtDominio.Location = new System.Drawing.Point(305, 116);
+            this.txtDominio.MaxLength = 7;
+            this.txtDominio.Name = "txtDominio";
+            this.txtDominio.Size = new System.Drawing.Size(100, 35);
+            this.txtDominio.TabIndex = 7;
             // 
             // frmAutotest
             // 
@@ -266,13 +266,13 @@
         private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Label lblMasAntiguo;
         private System.Windows.Forms.Label lblCant6Caracteres;
-        private System.Windows.Forms.MaskedTextBox mskDominio;
         private System.Windows.Forms.MaskedTextBox mskNumero;
         private System.Windows.Forms.MaskedTextBox mskCantTurnos;
         private System.Windows.Forms.MaskedTextBox mskMasAntiguo;
         private System.Windows.Forms.MaskedTextBox mskCant6Caracteres;
         private System.Windows.Forms.TextBox txtTitular;
         private System.Windows.Forms.NumericUpDown nrmAñoFab;
+        private System.Windows.Forms.TextBox txtDominio;
     }
 }
 
