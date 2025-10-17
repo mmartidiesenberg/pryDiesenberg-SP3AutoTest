@@ -63,6 +63,11 @@ namespace pryDiesenberg_SP3AutoTest
                 MessageBox.Show("Debe ingresar un número entero válido.");
             }
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 
