@@ -43,6 +43,26 @@ namespace pryDiesenberg_SP3AutoTest
                 e.Cancel = true;
             }
         }
+        List<int> numerosUsados = new List<int>();
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(mskNumero.Text, out int numero))
+            {
+                if (numerosUsados.Contains(numero))
+                {
+                    MessageBox.Show("Ese número de turno ya fue usado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    numerosUsados.Add(numero);
+                    MessageBox.Show("Turno guardado correctamente.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar un número entero válido.");
+            }
+        }
     }
 }
 
