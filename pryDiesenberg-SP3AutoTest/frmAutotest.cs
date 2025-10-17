@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace pryDiesenberg_SP3AutoTest
 {
-    public partial class Form1 : Form
+    public partial class frmAutotest : Form
     {
-        public Form1()
+        public frmAutotest()
         {
             InitializeComponent();
+        }
+
+        private void maskedTextBox5_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
     }
 }
