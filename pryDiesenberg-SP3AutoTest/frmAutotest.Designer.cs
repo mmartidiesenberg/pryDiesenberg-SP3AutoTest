@@ -65,9 +65,9 @@
             this.grpRegistro.Controls.Add(this.lblNumero);
             this.grpRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpRegistro.Location = new System.Drawing.Point(19, 16);
-            this.grpRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpRegistro.Margin = new System.Windows.Forms.Padding(2);
             this.grpRegistro.Name = "grpRegistro";
-            this.grpRegistro.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpRegistro.Padding = new System.Windows.Forms.Padding(2);
             this.grpRegistro.Size = new System.Drawing.Size(406, 168);
             this.grpRegistro.TabIndex = 0;
             this.grpRegistro.TabStop = false;
@@ -77,7 +77,7 @@
             // 
             this.txtDominio.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDominio.Location = new System.Drawing.Point(152, 62);
-            this.txtDominio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDominio.Margin = new System.Windows.Forms.Padding(2);
             this.txtDominio.MaxLength = 7;
             this.txtDominio.Name = "txtDominio";
             this.txtDominio.Size = new System.Drawing.Size(52, 21);
@@ -86,7 +86,7 @@
             // txtTitular
             // 
             this.txtTitular.Location = new System.Drawing.Point(152, 128);
-            this.txtTitular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTitular.Margin = new System.Windows.Forms.Padding(2);
             this.txtTitular.MaxLength = 30;
             this.txtTitular.Name = "txtTitular";
             this.txtTitular.Size = new System.Drawing.Size(238, 21);
@@ -96,7 +96,7 @@
             // nrmAñoFab
             // 
             this.nrmAñoFab.Location = new System.Drawing.Point(152, 95);
-            this.nrmAñoFab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nrmAñoFab.Margin = new System.Windows.Forms.Padding(2);
             this.nrmAñoFab.Maximum = new decimal(new int[] {
             2025,
             0,
@@ -119,7 +119,7 @@
             // mskNumero
             // 
             this.mskNumero.Location = new System.Drawing.Point(152, 27);
-            this.mskNumero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskNumero.Margin = new System.Windows.Forms.Padding(2);
             this.mskNumero.Mask = "99999";
             this.mskNumero.Name = "mskNumero";
             this.mskNumero.Size = new System.Drawing.Size(56, 21);
@@ -176,9 +176,9 @@
             this.grpEstadisticas.Controls.Add(this.lblCant6Caracteres);
             this.grpEstadisticas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpEstadisticas.Location = new System.Drawing.Point(19, 206);
-            this.grpEstadisticas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpEstadisticas.Margin = new System.Windows.Forms.Padding(2);
             this.grpEstadisticas.Name = "grpEstadisticas";
-            this.grpEstadisticas.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpEstadisticas.Padding = new System.Windows.Forms.Padding(2);
             this.grpEstadisticas.Size = new System.Drawing.Size(406, 134);
             this.grpEstadisticas.TabIndex = 0;
             this.grpEstadisticas.TabStop = false;
@@ -187,7 +187,7 @@
             // mskCantTurnos
             // 
             this.mskCantTurnos.Location = new System.Drawing.Point(284, 26);
-            this.mskCantTurnos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskCantTurnos.Margin = new System.Windows.Forms.Padding(2);
             this.mskCantTurnos.Mask = "99999";
             this.mskCantTurnos.Name = "mskCantTurnos";
             this.mskCantTurnos.Size = new System.Drawing.Size(52, 21);
@@ -197,7 +197,7 @@
             // mskMasAntiguo
             // 
             this.mskMasAntiguo.Location = new System.Drawing.Point(284, 64);
-            this.mskMasAntiguo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskMasAntiguo.Margin = new System.Windows.Forms.Padding(2);
             this.mskMasAntiguo.Name = "mskMasAntiguo";
             this.mskMasAntiguo.Size = new System.Drawing.Size(52, 21);
             this.mskMasAntiguo.TabIndex = 6;
@@ -205,7 +205,7 @@
             // mskCant6Caracteres
             // 
             this.mskCant6Caracteres.Location = new System.Drawing.Point(284, 103);
-            this.mskCant6Caracteres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mskCant6Caracteres.Margin = new System.Windows.Forms.Padding(2);
             this.mskCant6Caracteres.Name = "mskCant6Caracteres";
             this.mskCant6Caracteres.Size = new System.Drawing.Size(52, 21);
             this.mskCant6Caracteres.TabIndex = 7;
@@ -244,7 +244,7 @@
             // 
             this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.Location = new System.Drawing.Point(438, 257);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(78, 31);
             this.btnConsultar.TabIndex = 9;
@@ -255,7 +255,7 @@
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.Location = new System.Drawing.Point(438, 69);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(78, 31);
             this.btnSalir.TabIndex = 10;
@@ -267,12 +267,13 @@
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.Location = new System.Drawing.Point(438, 21);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(78, 31);
             this.btnRegistrar.TabIndex = 8;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // frmAutotest
             // 
@@ -285,7 +286,7 @@
             this.Controls.Add(this.grpEstadisticas);
             this.Controls.Add(this.grpRegistro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAutotest";
             this.Text = "Auto Test";
             this.grpRegistro.ResumeLayout(false);

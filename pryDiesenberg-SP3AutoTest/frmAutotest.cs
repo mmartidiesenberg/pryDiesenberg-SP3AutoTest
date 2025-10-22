@@ -63,6 +63,21 @@ namespace pryDiesenberg_SP3AutoTest
                 txtTitular.BackColor = SystemColors.Window; // vuelve al color normal
             }
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            if (txtDominio.Text.Trim().Length >= 6 &&
+             txtTitular.Text.Trim().Length >= 2 &&
+             mskNumero.Text.Trim() != "" &&
+             nrmAñoFab.Value > 0)
+            {
+                MessageBox.Show("Registro Exitoso", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Faltan Datos o Hay Campos Inválidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
 
