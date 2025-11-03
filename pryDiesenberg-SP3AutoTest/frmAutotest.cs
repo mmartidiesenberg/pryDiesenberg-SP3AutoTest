@@ -49,7 +49,17 @@ namespace pryDiesenberg_SP3AutoTest
         {
             this.Close();
         }
+        Turno[] turnos = new Turno[100];
+        int Cantidad = 0; // contador de turnos cargados
 
+        // Definición de la estructura
+        struct Turno
+        {
+            public int Numero;
+            public string Dominio;
+            public int AñoFabricacion;
+            public string Titular;
+        }
         private void txtTitular_Validating(object sender, CancelEventArgs e)
         {
             if (txtTitular.Text.Length < 2)
@@ -77,6 +87,41 @@ namespace pryDiesenberg_SP3AutoTest
             {
                 MessageBox.Show("Faltan Datos o Hay Campos Inválidos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            // primer consulta: cantidad de turnos registrados
+            // se obtiene directamente de la variable 'Cantidad'
+            mskCantTurnos.Text = Cantidad.ToString();
+            // segunda consulta: se debe recorrer el arreglo y determinar
+            // el menor valor del campo 'AnioFabricacion'
+            int menor = int.MaxValue; // mayor valor posible
+            int pos;
+            // recorrer el arreglo hasta la posición con datos
+            for (pos = 0; pos < Cantidad; pos++)
+            {
+                // comparar el valor del elemento en el arreglo
+                if (turnos[pos].AñoFabricacion < menor)
+                {
+                    menor = turnos[pos].AñoFabricacion; // guarda el menor valor
+                }
+            }
+            // mostrar el resultado
+            mskMasAntiguo.Text = menor.ToString();
+            // tercera consulta: cantidad de vehículos con dominio de 6 caracteres
+            int contador = 0; // contador en cero
+                              // recorrer el arreglo hasta la posición con datos
+            for (pos = 0; pos < Cantidad; pos++)
+            {
+                // controlar si la longitud del dominio es 6
+                if (turnos[pos].Dominio.Length == 6)
+                {
+                    contador++; // incrementar el contador
+                }
+            }
+            // mostrar el resultado
+            mskCant6Caracteres.Text = contador.ToString();
         }
     }
 }
